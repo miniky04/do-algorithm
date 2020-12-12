@@ -3,7 +3,8 @@ https://programmers.co.kr/learn/courses/30/lessons/42840
 
 설명 : 
 1. 변수설명 : answer 많이 맞춘 사람수 정열해둘 배열 , count 맞춘 개수 배열 
-2. 코드설명 : solution()함수를 정의한 다음, 많이 맞춘 사람 수를 정열해둘 answer라는 변수와 맞춘 개수를 넣어둘 count라는 변수를 생성한다.
+2. 코드설명 : 
+   solution()함수를 정의한 다음, 많이 맞춘 사람 수를 정열해둘 answer라는 변수와 맞춘 개수를 넣어둘 count라는 변수를 생성한다.
 `a,b,c가 찍는 방식을 a = [], b = [], c = []식으로 배열정리` 해둔다.
    그 다음 for문을 이용해서 answers(정답)의 개수만큼 반복하는데 이때 i의 값이 0부터 차례대로 들어가게 된다.
    for문 안에 if문을 중첩하게 두고 if a[i % len(a)] == answers[i]: 라는 것은 a[i % a의 길이]가 answers[i]와 똑같을 때 라는 말인데 여기서 i%len(a)를 해주는 이유는
@@ -17,3 +18,7 @@ https://programmers.co.kr/learn/courses/30/lessons/42840
    이로써 다시 answer를 오름차순 정렬해둔다.
    여기서 오름차순 정렬을 다시 하는 이유는 동점자가 여럿일 때는 오름차순 정렬을 하라는 조건이 있기 때문이다.
    다음 answer값을 반환해준다.
+   
+3. 주의할 점 :
+a,b,c 배열의 각각의 길이가 다른 점을 고려하여 a[i % len(a)]를 해주는 것이 중요하고 주의가 필요하다.
+   

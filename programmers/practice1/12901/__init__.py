@@ -10,6 +10,11 @@ def solution(a, b):
     answer = day[n]
     return answer
 
+# def getDayName(a,b):
+#     months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#     days = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
+#     return days[(sum(months[:a-1])+b-1)%7]
+
 
 a1 = 5
 b2 = 24

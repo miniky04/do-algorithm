@@ -7,6 +7,9 @@ def solution(participant, completion):
         else:
             return name  # 완주한 사람 목록에 해당 사람이 없을 때
     return list(dict(filter(lambda x: x[1] > 0, d_p.items())).keys())[0]
+#쌍을 x로 받아서 x값에서 인덱스 1이 0보다 크다 -> 이름에 있는 개수가 0보다 큰 것을 filter
+#그 결과를 dict로 만들어서 keys()값을 뽑아내면 필터링된 결과의 쌍이 나오는 데 그 쌍 중 keys() 즉, 이름만 가져온다.
+#다시 list로 바꾸어서 인덱스0값을 반환
 
 
 def to_dic(source):

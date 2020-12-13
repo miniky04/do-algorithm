@@ -3,11 +3,11 @@ def solution(arr, divisor):
     for i in range(len(arr)):
         if arr[i] % divisor == 0:
             answer.append(arr[i])
-        else:
-             continue
+        # else:
+        #     continue
     if len(answer) == 0:
         answer.append(-1)
-    return sorted(answer) #원본배열 순서가 변하지않고 유지된다.
+    return sorted(answer)   # 원본배열 순서가 변하지않고 유지된다.
 
 
 # def solution(arr, divisor):

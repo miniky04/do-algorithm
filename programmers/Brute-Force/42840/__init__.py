@@ -6,8 +6,8 @@ def solution(answers):
     c = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
     for i in range(len(answers)):
         if a[i % len(a)] == answers[i]: #answers길이 % a,b,c 길이
-            count[0] += 1
-        if b[i % len(b)] == answers[i]:
+            count[0] += 1 #대기업에서는 count[0] = count[0] + 1 라고 표시하라고 한다
+        if b[i % len(b)] == answers[i]: #len(n)값을 미리 주는게 효율성 업 (아니면 계산을 계속한다)
             count[1] += 1
         if c[i % len(c)] == answers[i]:
             count[2] += 1

@@ -21,8 +21,19 @@
 #                 print(answer)
 #     return answer
 
+# sun, bed, car
 def solution(strings, n):
+    # check = [usun, ebed, acar]
+    check = []
     answer = []
+    for i in strings:
+        check.append(i[n] + i)
+
+    strings = sorted(check)
+
+    for i in strings:
+        answer.append(i[1:])
+
     return answer
 
 

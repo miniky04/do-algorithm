@@ -28,12 +28,9 @@ def solution(strings, n):
     answer = []
     for i in strings:
         check.append(i[n] + i)
-
     strings = sorted(check)
-
     for i in strings:
         answer.append(i[1:])
-
     return answer
 
 

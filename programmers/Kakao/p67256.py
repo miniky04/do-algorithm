@@ -28,7 +28,6 @@ def solution(numbers, hand):
             # 원래 int 했는데 에러뜨면서 python functions 가보니 abs()함수가 있어서 사용 (에러 아래 참고)
             # TypeError: 'builtin_function_or_method' object is not subscriptable 에러가 뜨면서 []연산자를 사용할 수 없다고 뜸
             # abs()함수 : 절대값을 반환 ex) abs(-11) = 11 이런 느낌
-            # left_comparison 비교라는 의미로 할려했는데 왜 변수로 안되는 걸까
             left_comparison = abs(now[0] - left[0]) + abs(now[1] - left[1])
             # ex) 현재 7[2,1]을 가리키고 있는데 다음 숫자가 2[0,1]일 때 now[0] - left[0] = abs(2) / now[1] = left[1] = abs(0)
             # ex) left_comparison = 2
@@ -54,4 +53,4 @@ def solution(numbers, hand):
 
 numbers2 = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]
 hand2 = "left"
-print(solution(numbers2, hand2)) #LRLLRRLLLRR
+print(solution(numbers2, hand2))  # LRLLRRLLLRR
